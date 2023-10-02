@@ -30,7 +30,7 @@ function HeaderSm() {
 
 export default HeaderSm;
 
-function Sidebar({ showSidebar, setShowSidebar }) {
+function Sidebar({ showSidebar, setShowSidebar }: any) {
   return (
     <div
       className={`${
@@ -75,10 +75,16 @@ function Sidebar({ showSidebar, setShowSidebar }) {
       </div>
       {/*  */}
       <div className="mt-2 flex justify-between">
-        <Button className="bg-stone-100 text-lg hover:bg-stone-200/70">
+        <Button
+          type="small"
+          className="bg-stone-100 text-black hover:bg-stone-200/70"
+        >
           Login
         </Button>
-        <Button className="bg-primary px-3 py-1 font-semibold text-white  hover:bg-primary/90">
+        <Button
+          type="small"
+          className="bg-primary  text-white  hover:bg-primary/90"
+        >
           Sign Up
         </Button>
       </div>

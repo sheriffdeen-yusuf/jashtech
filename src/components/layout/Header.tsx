@@ -9,7 +9,7 @@ function Header() {
   return (
     <>
       <HeaderSm />
-      <header className="inset-0 left-1 top-1 hidden items-center  justify-between bg-white/30 px-40 py-4 backdrop-blur-sm  md:flex  ">
+      <header className="fixed inset-0 left-1 top-0 z-20 hidden h-14 items-center  justify-between bg-white/80 px-40 py-4 backdrop-blur-md  md:flex  ">
         <h1 className="text-3xl font-extrabold italic ">
           <span className="text-primary">jash</span>tech
         </h1>
@@ -28,9 +28,7 @@ function Header() {
             <Lock className="h-[1.5rem] w-[1.3rem]" strokeWidth={1.25} />
             Login
           </Button>
-          <Button className="bg-primary px-6 py-3 font-semibold text-white  hover:bg-primary/90">
-            Sign up for Free
-          </Button>
+          <Button type="primary">Sign up for Free</Button>
         </div>
       </header>
     </>
