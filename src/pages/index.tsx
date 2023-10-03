@@ -18,17 +18,17 @@ function Index() {
   return (
     <div className="">
       <Header />
-      <div className="my-20 grid grid-cols-2 gap-6 px-40 ">
-        <div className="space-y-8">
+      <div className="my-20 grid grid-cols-1 gap-6 px-10 md:grid-cols-2 md:px-40 ">
+        <div className="order-2 space-y-8 md:order-1">
           <h1 className="font-normal uppercase text-primary ">
             start to success
           </h1>
-          <p className="text-5xl font-semibold capitalize text-stone-900">
+          <p className="text-2xl font-semibold capitalize text-stone-900 md:text-5xl">
             want to transform your <span className="text-primary">TECH</span>{" "}
             career or get started in the{" "}
             <span className="text-primary">TECH</span> industry
           </p>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
             <Button type="pMedium">get started in tech</Button>
             <Button type="pMedium">improve your skills</Button>
           </div>
@@ -44,7 +44,7 @@ function Index() {
             </IconButton>
           </div>
         </div>
-        <div>
+        <div className="order-1 md:order-2  ">
           <Image
             src="/woman.svg"
             alt="woman svg"
@@ -55,8 +55,8 @@ function Index() {
         </div>
       </div>
       {/* most popular course */}
-      <div className="grid grid-cols-4 bg-stone-200 px-40 py-16">
-        <h2 className="text-6xl font-semibold capitalize text-stone-900">
+      <div className="grid grid-cols-1 bg-stone-200 px-10 py-16 md:grid-cols-4 md:px-40">
+        <h2 className="text-3xl font-semibold capitalize text-stone-900 md:text-6xl">
           Most{" "}
           <span className="text-primary">
             Popular <Line /> Course
@@ -67,7 +67,7 @@ function Index() {
         </div>
       </div>
       {/* most popular category */}
-      <div className="px-40 py-12">
+      <div className="px-10 py-12 md:px-40">
         <h2 className="text-3xl font-semibold capitalize text-stone-900">
           Most{" "}
           <span className="text-primary">
@@ -84,7 +84,7 @@ function Index() {
         </div>
       </div>
       {/* best instructors */}
-      <div className="  bg-stone-200 px-40 py-12">
+      <div className="  bg-stone-200 px-10 py-12 md:px-40">
         <h2 className="text-3xl font-semibold capitalize text-stone-900">
           Our{" "}
           <span className="text-primary">
@@ -106,7 +106,7 @@ function Index() {
         </div>
       </div>
       {/* our achvement  */}
-      <div className=" px-40 py-12">
+      <div className=" px-10 py-12 md:px-40">
         <h2 className="text-3xl font-semibold capitalize text-stone-900">
           Our{" "}
           <span className="text-primary">
@@ -127,7 +127,7 @@ function Index() {
       </div>
 
       {/*  student feedback */}
-      <div className="  px-40 py-12">
+      <div className="  px-10 py-12 md:px-40">
         <h2 className="text-3xl font-semibold capitalize text-stone-900">
           Student{" "}
           <span className="text-primary">
@@ -140,7 +140,7 @@ function Index() {
         <StudentFeedback />
       </div>
       {/*     Hello Beginner */}
-      <div className="  grid-col-1  my-8 grid gap-4 bg-stone-200 px-40 py-12 md:grid-cols-2">
+      <div className="  grid-col-1  my-8 grid gap-4 bg-stone-200 px-10 py-12 md:grid-cols-2 md:px-40">
         <Image src="/woman2.svg" alt="woman" width={400} height={300} />
         <div className="flex flex-col items-center justify-center gap-3">
           <h2 className="text-3xl font-semibold capitalize text-stone-900">
@@ -152,7 +152,7 @@ function Index() {
           <p className="text-lg ">
             You are about to write your first line of code.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             <OutlineButton className="rounded-lg border-red-300 bg-stone-100">
               Continue course
             </OutlineButton>

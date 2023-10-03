@@ -4,7 +4,7 @@ import Button from "../Ui/Button";
 
 function Footer() {
   return (
-    <footer className="grid-col-1 grid gap-8   px-40 py-12 md:grid-cols-4">
+    <footer className="grid-col-1 grid gap-8  px-10 py-12 md:grid-cols-4 md:px-40">
       <div>
         <h1 className="text-3xl font-extrabold italic ">
           <span className="text-primary">jash</span>tech
