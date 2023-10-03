@@ -1,7 +1,7 @@
 import Header from "@/components/layout/Header";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Button from "@/components/Ui/Button";
+import Button, { OutlineButton } from "@/components/Ui/Button";
 import { IconButton } from "@mui/material";
 import { Search, Menu, X, ChevronRight } from "lucide-react";
 import CarouselCourse from "@/components/indexComponents/CarouselCourse";
@@ -12,6 +12,7 @@ import CategoryTag from "@/components/indexComponents/CategoryTag";
 import InstructorCard from "@/components/indexComponents/InstructorCard";
 import Achievement from "@/components/indexComponents/Achievement";
 import StudentFeedback from "@/components/indexComponents/StudentFeedback";
+import Footer from "@/components/layout/Footer";
 
 function Index() {
   return (
@@ -136,9 +137,36 @@ function Index() {
         <p className="text-lg text-stone-800">
           Various versions have evolved over the years, sometimes by accident,
         </p>
-
         <StudentFeedback />
       </div>
+      {/*     Hello Beginner */}
+      <div className="  grid-col-1  my-8 grid gap-4 bg-stone-200 px-40 py-12 md:grid-cols-2">
+        <Image src="/woman2.svg" alt="woman" width={400} height={300} />
+        <div className="flex flex-col items-center justify-center gap-3">
+          <h2 className="text-3xl font-semibold capitalize text-stone-900">
+            Hello{" "}
+            <span className="text-primary">
+              Beginner, <Line />
+            </span>
+          </h2>
+          <p className="text-lg ">
+            You are about to write your first line of code.
+          </p>
+          <div className="flex gap-4">
+            <OutlineButton className="rounded-lg border-red-300 bg-stone-100">
+              Continue course
+            </OutlineButton>
+            <Button
+              type="pMedium"
+              className="rounded-lg bg-black text-red-500 hover:bg-black/25"
+            >
+              Check other courses
+            </Button>
+          </div>
+        </div>
+      </div>
+      {/* footer */}
+      <Footer />
     </div>
   );
 }
