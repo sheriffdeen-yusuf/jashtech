@@ -24,11 +24,15 @@ function Header() {
         </ul>
         <div className="flex items-center gap-2 ">
           <ThemeToggle />
-          <Button className="flex gap-1 bg-stone-100 text-lg hover:bg-stone-200/70">
-            <Lock className="h-[1.5rem] w-[1.3rem]" strokeWidth={1.25} />
-            Login
-          </Button>
-          <Button type="primary">Sign up for Free</Button>
+          <Link href="/login">
+            <Button className="flex gap-1 bg-stone-100 text-lg hover:bg-stone-200/70">
+              <Lock className="h-[1.5rem] w-[1.3rem]" strokeWidth={1.25} />
+              Login
+            </Button>
+          </Link>
+          <Link href="/register">
+            <Button type="primary">Sign up for Free</Button>
+          </Link>
         </div>
       </header>
     </>
