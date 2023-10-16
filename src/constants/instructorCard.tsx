@@ -1,8 +1,8 @@
 const data = [
   {
-    name: "Mabel Nwanze",
-    title: "UI-UX Design Expart",
-    picture: "/p1.png",
+    name: "Jamiu Abdullahi",
+    title: "Full stack developer",
+    picture: "/p1.jpeg",
   },
   {
     name: "Lois Stone ",
@@ -10,14 +10,14 @@ const data = [
     picture: "/p2.png",
   },
   {
-    name: "Chidera Jones",
-    title: "Business Idea Expart",
-    picture: "/p3.png",
+    name: "Abdullahi A. Abdulwasiu",
+    title: "Product & graphics designer",
+    picture: "/p3.jpeg",
   },
   {
-    name: "Jane Jones",
-    title: "Programming  Expart",
-    picture: "/p4.png",
+    name: "Ibrahim Ayodeji",
+    title: "Front-end developer and Blockchain",
+    picture: "/p4.jpeg",
   },
 ];
 

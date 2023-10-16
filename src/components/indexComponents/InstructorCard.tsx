@@ -8,7 +8,7 @@ import { InstructorCardPros } from "@/interfaces/ui.interface";
 function InstructorCard({ name, title, url }: InstructorCardPros) {
   return (
     <Card className="relative" sx={{ maxWidth: 365, minWidth: 250, p: 1 }}>
-      <CardMedia sx={{ height: 150 }} image={url} title={name} />
+      <CardMedia sx={{ height: 290 }} image={url} title={name} />
       <CardContent className="text-center">
         <Typography
           gutterBottom
